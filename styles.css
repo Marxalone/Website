@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://www.example.com/your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* Intro Section */
+.intro {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ffcccb;
+}
+
+/* Popup Menu Container */
+.popup-menu {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.lash-types {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lash-item {
+  position: relative;
+  width: 30%;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.lash-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.lash-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.lash-item h3 {
+  margin-top: 10px;
+  color: #555;
+  font-size: 1.2em;
+}
+
+/* Tooltip Popup */
+.lash-item .tooltip {
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lash-item:hover .tooltip {
+  display: block;
+}
+
+.lash-item .tooltip img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.lash-item .tooltip p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 0;
+  margin-top: 50px;
+}
